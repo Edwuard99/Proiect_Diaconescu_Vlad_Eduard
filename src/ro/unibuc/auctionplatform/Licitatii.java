@@ -43,4 +43,15 @@ public class Licitatii {
     public int getId() {
         return id;
     }
+
+    @Override
+    public String toString() {
+        return "Licitatii{" +
+                "product='" + product + '\'' +
+                ", date=" + date +
+                ", startingBid=" + startingBid +
+                ", buyOut=" + buyOut +
+                ", id=" + id +
+                '}';
+    }
 }

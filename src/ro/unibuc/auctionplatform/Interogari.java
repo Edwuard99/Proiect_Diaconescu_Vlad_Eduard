@@ -47,7 +47,8 @@ public class Interogari implements InterfataAdmin{
         System.out.println("Numar de telefon");
         String phoneNumber = in.next();
 
-        Utilizatori utilizatori = new Utilizatori(userName, adress, birthday, phoneNumber);
+        Utilizatori utilizator = new Utilizatori(userName, adress, birthday, phoneNumber);
+        utilizatori.add(utilizator);
     }
 
     public void addProduse(Scanner in){
@@ -57,7 +58,8 @@ public class Interogari implements InterfataAdmin{
         System.out.println("Descriere produs");
         String descriere = in.next();
 
-        Produse produse = new Produse(numeProduse, descriere);
+        Produse produs = new Produse(numeProduse, descriere);
+        produse.add(produs);
     }
 
     public void addLicitatii(Scanner in){
@@ -73,7 +75,8 @@ public class Interogari implements InterfataAdmin{
         System.out.println("Pretul la care poti cumpara produsul fara sa il mai licitezi");
         int buyOut = in.nextInt();
 
-        Licitatii licitatii = new Licitatii(product, date, startingBid, buyOut);
+        Licitatii licitatie = new Licitatii(product, date, startingBid, buyOut);
+        licitatii.add(licitatie);
     }
 
     public void addBids(Scanner in){

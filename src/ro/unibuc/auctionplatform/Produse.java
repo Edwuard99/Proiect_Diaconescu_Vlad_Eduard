@@ -35,4 +35,13 @@ public class Produse {
     public void setDescriere(String descriere) {
         this.descriere = descriere;
     }
+
+    @Override
+    public String toString() {
+        return "Produse{" +
+                "id=" + id +
+                ", numeProduse='" + numeProduse + '\'' +
+                ", descriere='" + descriere + '\'' +
+                '}';
+    }
 }

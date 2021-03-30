@@ -31,4 +31,5 @@ public interface InterfataAdmin {
     void addBids(Scanner in);
 
 
+
 }

@@ -32,20 +32,20 @@ public class Main {
 
             if(optiune==5)
             {
-                System.out.println(interogari.getUtilizatoriById(in.nextInt()));
+                System.out.println(interogari.getUtilizatoriById(in.nextInt()).toString());
             }
 
             if(optiune==6)
             {
-                System.out.println(interogari.getProduseById(in.nextInt()));
+                System.out.println(interogari.getProduseById(in.nextInt()).toString());
             }
 
             if(optiune==7)
             {
-                System.out.println(interogari.getLicitatiiById(in.nextInt()));
+                System.out.println(interogari.getLicitatiiById(in.nextInt()).toString());
             }
+            System.out.println("introduceti optiunea dumneavoastra sau apasati -1");
+            optiune = in.nextInt();
         }
-        System.out.println("introduceti optiunea dumneavoastra");
-        optiune = in.nextInt();
     }
 }

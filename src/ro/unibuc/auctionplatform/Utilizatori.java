@@ -5,6 +5,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Date;
 
 public class Utilizatori {
+
     @NotNull
     protected String userName;
     protected String adress;
@@ -50,4 +51,14 @@ public class Utilizatori {
         this.adress = adress;
     }
 
+    @Override
+    public String toString() {
+        return "Utilizatori{" +
+                "userName='" + userName + '\'' +
+                ", adress='" + adress + '\'' +
+                ", id=" + id +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", birthday=" + birthday +
+                '}';
+    }
 }
